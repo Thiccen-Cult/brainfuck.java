@@ -35,7 +35,9 @@ public class Main{
         case ']': 
             if(base[pointer]!=0){
           i=charPos.get(charPos.size()-1);
-        }else{charPos.remove(charPos.size()-1);}break;
+        }
+          else{charPos.remove(charPos.size()-1);}
+          break;
         case '.': 
             System.out.print((char)base[pointer]);break;
         case ',': try{
