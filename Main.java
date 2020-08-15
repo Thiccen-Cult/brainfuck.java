@@ -7,7 +7,7 @@ public class Main{
     int pointer = 0;
     String fileName = args[0];
     String line = null;
-    List<Character> instructions =new ArrayList<>();
+    List<Character> instructions = new ArrayList<>();
     try{
       FileReader filereader = new FileReader(fileName);
       BufferedReader br = new BufferedReader(filereader);
@@ -20,7 +20,7 @@ public class Main{
     } catch(Exception e){}
     List<Integer> charPos = new ArrayList<>();
     Scanner scan = new Scanner(System.in);
-    for(int i=0; i<instructions.size(); i++){
+    for(int i = 0; i < instructions.size(); i++){
       switch(instructions.get(i)){
         case '>': 
             pointer++; break;
